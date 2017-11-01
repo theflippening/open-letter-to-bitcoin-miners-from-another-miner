@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>An open letter to Bitcoin miners from another miner</title>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement({
+					pageLanguage: 'en',
+					layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+				}, 'google_translate_element');
+			}
+			</script>
+		<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	</head>
+	<body>
+		<div id="google_translate_element"></div>
+		<main>
+			<h1>An open letter to Bitcoin and Bitcoin Cash miners from another miner</h1>
+			<p>
+				For Bitcoin to succeed and gain total market dominance <i>there should only be one Bitcoin</i>. For merchants it is too painful to have to support MasterCard, Visa, PayPal and then add additional cryptocurrencies as well each time a new one comes on the scene. This takes developer time and testing to support a new currency by adding frontend and backend payment processing, invoicing support and potentially additional infrastructure for point of sale merchants. No-one has time or money for that. The ideal scenario is a single Bitcoin cryptocurrency with global market acceptance. Not a new fork every month where everyone has to scramble to try support it. This wastes everyone's time and also splits the market capital among several different forks of Bitcoin. The only winners in this scenario will be alternate cryptocurrencies.
+			</p>
+			<p>
+				From a mining perspective I just want to mine one coin and have that coin increase in value reliably over time. I do not want to have to split my mining efforts between the most profitable coin every hour and have to maintain two different wallets, keep track of the prices, try exchanging one coin for the other and so on. It's too much drama. Why do we not just keep it simple. We need to investigate the contenders and decide on the best Bitcoin to invest our mining efforts into for safe, long term profitability and which is the best Bitcoin to finally destroy fiat currency.
+			</p>
+
+			<h2 id="the-bitcoin-contenders">The Bitcoin contenders</h2>
+			<h3 id="bitcoin-legacy">Legacy Bitcoin (BTC)</h3>
+			<p>
+				First let's examine Legacy Bitcoin. This used to be the top cryptocurrency in terms of market acceptance and usability. Then in 2015 things changed for the worse. The network became congested, transactions took hours or days to get a single confirmation and the fees rose to unacceptable levels. Many merchants and services have had to drop support for Bitcoin because the fees make it unprofitable. Legacy Bitcoin has lost a lot of market cap from users looking to alternative cryptocurrencies which actually work properly. The madness has continued to this day with the current custodians of the Bitcoin Core GitHub code repository doing next to nothing to ease the congestion. The simplest option would have been to raise the block size cap from 1 MB that Satoshi Nakamoto originally added as a temporary measure to prevent spam transactions. However the company BlockStream, backed by insurance giant AXA<a class="ref" href="https://www.wsj.com/articles/bitcoin-startup-blockstream-raises-55-million-in-funding-round-1454518655">[ref]</a> which now has the majority of developers controlling the Core repository did not want that. They wanted to stifle on-chain capacity so they could force users and transactions into using their patented side chain called Lightning Network<a class="ref" href="https://falkvinge.net/2017/05/01/blockstream-patents-segwit-makes-pieces-fall-place/">[ref]</a>. Not to mention that the Lightning Network will abandon the original Bitcoin vision for a fully decentralised payment system<a class="ref" href="https://medium.com/@jonaldfyookball/mathematical-proof-that-the-lightning-network-cannot-be-a-decentralized-bitcoin-scaling-solution-1b8147650800">[ref]</a> and move to a system which is more like regular banks which can be controlled, regulated and censored<a class="ref" href="https://news.bitcoin.com/lightning-network-centralization-leads-economic-censorship/">[ref]</a>. This is a disgusting hostile corporate takeover attempt of Bitcoin and the goal is to kill it off as a decentralised currency.
+			</p>
+			<p>
+				Blockstream and the Bitcoin core developers partnered with Theymos<a class="ref" href="https://www.google.com/search?q=theymos">[ref]</a>, who administrates the BitcoinTalk forum, moderates the main /r/bitcoin subreddit and a few other sites. Together they enacted a massive censorship scheme to block any user from speaking out against BlockStream, the Core developers or discussing alternatives to BlockStream's chosen scaling solution<a class="ref" href="https://medium.com/@johnblocke/a-brief-and-incomplete-history-of-censorship-in-r-bitcoin-c85a290fe43">[ref]</a>. Entire posts to this day continue to be deleted, users are banned, comments are deleted or in some cases hidden from view from everyone else which is unknown to the comment owner. This is all to futher the BlockStream agenda and hijack Bitcoin for their corporate gain, to stifle dissent and present an image of complete community consensus.
+			</p>
+			<p>
+				BlockStream and the Core developers have done a great deal of damage to Bitcoin especially in eroding Satoshi's original design and utility:
+			</p>
+			<ul>
+				<li>
+					Due to the constant high fees and network congestion, they introduced an anti-feature called Replace By Fee (RBF)<a class="ref" href="https://medium.com/@octskyward/replace-by-fee-43edd9a1dd6d">[ref]</a>. The aim of this was to allow users to pay a higher fee for transactions that were stuck and unconfirmed. This broke a critical feature called Zero-Conf which meant merchants could reliably accept a low value transaction with no confirmations as long as it was the first transaction seen on the network. Merchants could monitor key nodes around the network and reliably detect double spends with very good accuracy which allowed them to accept transactions with high confidence within 10 seconds and not have to wait minutes or hours for confirmations. Zero-Conf worked great for Brick and Mortar stores like buying your morning coffee. With the RBF feature, now users could pay for their goods, leave the store, then send the same transaction again but this time with a higher fee and send the amount back to their own wallet and rob the merchant in broad daylight. This feature robs Bitcoin of being a useful Point of Sale transaction mechanism.
+				</li>
+				<li>
+					Another anti-feature added by BlockStream/Core is called SegWit<a class="ref" href="https://medium.com/@john.s.millibit/bitcoin-through-the-looking-glass-cb1a96cfb494">[ref]</a><a class="ref" href="https://medium.com/@ViaBTC/why-we-dont-support-segwit-91d44475cc18">[ref]</a>. This attempts to solve a problem with transaction malleability but in reality this is a non-problem<a class="ref" href="https://news.bitcoin.com/should-we-fix-malleability-in-bitcoin-and-bitcoin-cash-if-so-how-and-when/">[ref]</a><a class="ref" href="https://medium.com/@ProfFaustus/spending-the-simple-way-in-bitcoin-cash-5e0755f1e437">[ref]</a>. It's a complicated mess and adds a lot of technical debt to the code<a class="ref" href="https://medium.com/the-publius-letters/segregated-witness-a-fork-too-far-87d6e57a4179">[ref]</a><a class="ref" href="https://www.deadalnix.me/2016/10/17/segwit-is-not-great/">[ref]</a>. The only real reason it was added was to help BlockStream and make their patented Lightning Network become a reality. But Lightning Network is still many months away<a class="ref" href="https://www.youtube.com/watch?v=eCE2OzKIab8&feature=youtu.be&t=5h42m40s">[ref]</a>. It's the classic definition of vapourware. SegWit also introduces real security issues<a class="ref" href="https://steemit.com/bitcoin/@modprobe/i-looked-into-segwit-and-here-s-what-i-saw">[ref]</a><a class="ref" href="https://coingeek.com/risks-segregated-witness-opening-door-mining-cartels-undermine-bitcoin-network/">[ref]</a>, none of which were present in the original design. There is a reason people are calling this a cancer on Bitcoin.
+				</li>
+			</ul>
+			<p>
+				In summary, Legacy Bitcoin is no longer useful as a currency and has been taken over by the banking corporations in an attempt to kill off Bitcoin as we know it.
+			<p>
+
+			<h3 id="bitcoin-cash">Bitcoin Cash (BCH)</h3>
+			<p>
+				Now let's talk about a more positive option called Bitcoin Cash<a class="ref" href="https://www.bitcoincash.org/">[ref]</a>. Bitcoin Cash started as a clean hard fork of Bitcoin on August 1st 2017 at block 478,558. Everyone holding Bitcoin at the time received a 1:1 amount of Bitcoin Cash<a class="ref" href="https://bitcoinexchangeguide.com/bitcoin-cash-bch/">[ref]</a>. Bitcoin Cash increased the block size limit to 8 MB allowing eight times the transaction throughput of Legacy Bitcoin. This means lower fees again (e.g. 1 Satoshi per byte) as the blocks are no longer arbitrarily constrained. The future roadmap is to scale on chain and there have been successful tests to scale to 1 GB blocks in future which would allow transaction processing similar to current Visa levels. Bitcoin Cash removed the anti-features RBF and SegWit, thus returning Bitcoin to the original design as per Satoshi's whitepaper<a class="ref" href="http://static.bitcoingroup.com.au/wp-content/uploads/2015/09/Satoshi-White-Paper.pdf">[ref]</a> and making it actually useful for merchants and micro transactions again.
+			</p>
+			<p>
+				Where Bitcoin has one development team mostly controlled by a company BlockStream, Bitcoin Cash has 5 independent development teams working to make it the best cryptocurrency<a class="ref" href="https://news.bitcoin.com/bitcoin-cash-network-continues-to-grow-with-an-ambitious-roadmap/">[ref]</a>. It will never be taken over by a company again for their personal profits. For a decentralised cryptocurrency we need decentralised development as well to prevent corporate takeover. Bitcoin Cash is gaining in market share every day, currently in the number 3 or 4 spot for overall market cap<a class="ref" href="https://livecoinwatch.com/">[ref]</a>. Merchant adoption is also increasing daily and being tracked at the Accept Bitcoin Cash Initiative<a class="ref" href="https://acceptbitcoin.cash/">[ref]</a> website where users can also tweet to their favourite merchants asking them to support Bitcoin Cash if they do not already.
+			</p>
+			<p>
+				Bitcoin Cash also has an important feature called the Emergency Difficulty Adjustment (EDA) which prevents chain death in the event of a sudden loss of hash power on the network. This has already been triggered multiple times when hashpower has switched between Legacy Bitcoin and Bitcoin Cash repeatedly due to the short-term profitability differences. Legacy Bitcoin and its derivatives have this fatal flaw where if it loses too much hash power, transactions in the mempool will pile up, fees will raise to high levels and eventually everything stops working. Transactions won't get confirmed for days, merchants can't receive payments on time and eventually if this continues for a long perioid, the chain gets frozen in limbo forever<a class="ref" href="http://bitcoinandtheblockchain.blogspot.com.br/2017/08/chain-death-spiral-fatal-bitcoin.html">[ref]</a>. In the event of a real chain death, all investors, miners and users stand to lose their money. Bitcoin Cash is the only coin without this fatal flaw and the only one worth investing our mining efforts into if we do not wish to lose our money one day.
+			</p>
+
+			<h3 id="bitcoin-segwit">Bitcoin SegWit2X</h3>
+			<p>
+				Bitcoin SegWit2X does not exist yet, but this hard fork to the Legacy Bitcoin chain is scheduled to occur mid November 2017 at block height 494,784<a class="ref" href="https://segwit2x.github.io/segwit2x-announce.html">[ref]</a>. This hard fork is due to occur because of the New York Agreement (NYA)<a class="ref" href="https://en.wikipedia.org/wiki/Bitcoin_scalability_problem#Pending_scaling_proposals">[ref]</a> which compromised to accept the cancerous SegWit feature in return for a 2 MB block size cap. Nobody is legally bound to follow through with the NYA, there are no financial penalties if miners decide to change their mind. It makes sense to review whether this agreement still makes sense. Currently it has over 84% mining support<a class="ref" href="https://coin.dance/blocks">[ref]</a> and tentative "let's see what happens" support from exchanges, wallets and merchants. However notably absent from the signing of the agreement was the BlockStream/Core group. Using their control of various forums, the /r/bitcoin subreddit, Twitter and the bitcoin.org site they have been pushing a serious "No 2X" propaganda campaign<a class="ref" href="http://www.trustnodes.com/2017/10/07/blockstream-loudly-segwit2x">[ref]</a>. This includes disgusting behavious such as slandering, attacking and threatening various exchanges, merchants and users for supporting SegWit2X. They want to try kill this fork of Bitcoin before it begins so everyone stays stuck on their crippled 1 MB chain. Eventually if Lightning Network ever makes it they will suck out the revenue from Bitcoin miners into their own pockets.
+			</p>
+			<p>
+				The problem with SegWit2X is that it is no longer needed now that there is Bitcoin Cash. SegWit2X enables a very pathetic 2 MB upgrade to the blocksize which is essentially kicking the can (scaling problem) down the road a short distance. It still retains the anti-features RBF which makes it toxic for merchants and SegWit which reduces the security. Development is merely shifted to another single company headed by Jeff Garzik<a class="ref" href="https://www.coindesk.com/full-steam-ahead-segwit2x-developer-jeff-garzik-says/">[ref]</a> instead of Core. This does nothing for centralised development and merely fires the toxic BlockStream/Core developers. While firing Core is a good outcome, it does not guarantee that Core will not just upgrade the block size as well to maintain their install base and relevance.
+			</p>
+			<p>
+				Fortunately there is a sure way to fire the bad actors in control of Bitcoin and teach them a valuable lesson at the same time. This method will consolidate all the market cap back into a single Bitcoin which functions properly for the ecosystem, merchants and users while keeping development decentralised and retain wide industry support.
+			</p>
+
+			<h2 id="action-plan">The action plan to consolidate the market cap back into one Bitcoin</h2>
+			<p>
+				Clearly the most obvious plan is to switch all our mining effort over to mining Bitcoin Cash, the only true Bitcoin as designed by Satoshi. However we must go about this in a coordinated fashion among all the mining pools for maximum effect:
+			</p>
+			<ul>
+				<li>
+					Firstly we must get our mining equipment ready to switch to the Bitcoin Cash chain at a moment's notice or the push of a button.
+				</li>
+				<li>
+					Secondly we need to switch to Bitcoin Cash mining <i>before</i> the SegWit2X hard fork in order to have a chance at killing this unnecessary fork off before it begins. The plan is to put all our mining power on the Legacy Bitcoin until the next regular (2016 block) difficulty adjustment at block 493,920<a class="ref" href="http://bitcointicker.co/networkstats/">[ref]</a> which will occur on about November 10 / 11. This ensures that the difficulty adjustment will increase and be as punitive as possible. This will make it practically impossible for any remnant miners to try keep the chain alive. Ignore any emergency difficulty adjustments occurring on the Bitcoin Cash chain during this time and keep mining Legacy Bitcoin for this two week period. Some of us with auto-profit switching turned on will need to turn this off. There should be a minimum amount of mining effort going towards the Bitcoin Cash chain at this time just to keep it moving steadily. The majority of the mining effort should stay on the Legacy Bitcoin chain to push the difficulty up as much as possible so it cannot survive with reduced hashpower in the future.
+				</li>
+				<li>
+					Thirdly, before this upward difficulty adjustment has kicked in, send all your Legacy Bitcoin and recent mining profits to an exchange. This may take 3 or so confirmations to get there so put a reasonable fee on it. Mining pools still mining Legacy Bitcoin can include their own transactions before anyone else's to make sure they get onto an exchange. Setup immediate sell orders to dump your coins on the exchange and buy up all Bitcoin Cash that you can. This will put downwards pressure on the price of Legacy Bitcoin and upwards pressure on the price of Bitcoin Cash. Users and large holders of Legacy Bitcoin (whales) can also help out here by selling off their Legacy Bitcoin for Bitcoin Cash over the next few weeks.
+				</li>
+				<li>
+					Finally, the most important part is when the upwards difficulty adjustment has occurred on Legacy Bitcoin this is the time to switch all our mining efforts to Bitcoin Cash. This means all mining pools or as many as possible. If you can't switch it quickly, turn the miner off until you can. We want the Legacy Bitcoin chain to slow down and freeze up completely. It will have 2016 blocks to go at maximum difficulty and minimal hash power. Also keep the miners pointed at the Bitcoin Cash chain regardless of any temporary price and profitability fluctuations. Eventually over a week or two the price of Bitcoin will collapse once the realisation and panic sets in because no more transactions will be getting confirmed and the chain will be effectively crawling or frozen. Once Bitcoin Cash has the majority hash power it is only a matter of weeks until it reaches the highest cumulative proof of work<a class="ref" href="https://fork.lol/pow/work">[ref]</a>. Once this happens Bitcoin Cash will rightfully be able to take the Bitcoin name and BTC ticker moving forward if desired. The corporate takeover of Bitcoin will be averted.
+				</li>
+			</ul>
+
+			<h2 id="effects-and-consequences">Effects and consequences</h2>
+			<p>Let's examine some of the effects for this plan of action:</p>
+			<ul>
+				<li>
+					Users that held Legacy Bitcoin at the moment of the Bitcoin Cash fork on August 1st 2017 will have the same amount of Bitcoin Cash and will lose nothing. This will be the majority of people. A fair amount of money is still locked up in exchanges like Coinbase.
+				</li>
+				<li>
+					Speculators and investors (or really we should call them gamblers), who have been buying into the Legacy Bitcoin over the past 2 months will lose their money if they do not sell their holdings over the next week or so. In reality they deserve to lose their money as they were buying into a worthless coin without doing their research. A store of value without any actual utility, or significantly degraded utility, is worthless. Legacy Bitcoin is terrible investment which shows they did not do their research at all. They were just buying into the hype and inflated price. A fool and their money are soon parted.
+				</li>
+				<li>
+					People who sold their Bitcoin Cash after the fork instead of sensibly holding both coins and waiting for the eventual outcome will also be left with nothing. This will teach them for not doing their research properly and believing BlockStream/Core propaganda.
+				</li>
+				<li>
+					The toxic BlockStream/Core developers, fanatics and their propaganda army which has been censoring discussion, trolling discussion forums, Reddit and Twitter will also be left holding bags of worthless SegWit coins. This will be a well deserved punishment for them. Censorship of forums and subreddits has played a big part in brainwashing many people. BlockStream and Core will have some serious explaining to do.
+				</li>
+				<li>
+					Any remaining miners not on board with this plan and still mining Legacy Bitcoin will be left mining a slow, high difficulty chain, perhaps at best 1 block every few hours or 1 block per day. Their profitability will sink and they will eventually need to switch to Bitcoin Cash to maintain profitability. BlockStream/Core may even come up with a drastic plan to introduce a hard fork to change the Proof of Work algorithm and add a new dynamic difficulty adjustment algorithm of their own. However by then it will be too late, the largest cumulative Proof of Work will be with Bitcoin Cash. Legacy Bitcoin will no longer be able to carry the Bitcoin name. BlockStream/Core may even try to throw their weight behind the Bitcoin Gold fork which uses GPU mining but with evidence of a 100,000 coin pre-mine and no software released so far it is essentially a scam coin<a class="ref" href="https://news.bitcoin.com/a-closer-look-at-the-suspicious-activity-involved-with-the-bitcoin-gold-fork/">[ref]</a>.
+				</li>
+			</ul>
+
+			<h2 id="conclusion">Conclusion</h2>
+			<p>
+				With the shackles of the arbitrary 1 MB block size cap, RBF and SegWit cancer removed, also BlockStream/Core toxicity behind us there is nowhere to go but up. Merchants that were previously supporting Legacy Bitcoin will only have to tweak their software to now support the surviving Bitcoin Cash chain which will increase adoption of the new chain dramatically with minimal effort. With the Bitcoin forks now consolidated into one coin it will stop shedding market cap and merchant support to other cryptocurrencies. Bitcoin Cash will be <i>the</i> dominant currency and our mining efforts will be fully rewarded. We should see the market cap and price take over Legacy Bitcoin's within a few weeks.
+			</p>
+			<p>
+				To enable this plan we need only to coordinate and distribute this plan privately amongst ourselves and to all our mining pool members. We do not need to signal anything in the blocks, buy silly hats or put lame tags in our twitter profiles. The revolution will come with no warning. Investors, whales and users should help spread this plan in their spheres of influence. Make sure people are aware of the risks in holding Legacy Bitcoin. Make sure your family members are not left holding bags of worthless Legacy Bitcoin. With everyone selling off their remaining Legacy Bitcoin holdings, this will put upwards momentum on the price of Bitcoin Cash before the actual hash power flippening. Now is in fact a good time to buy in while the real Bitcoin is well discounted.
+			</p>
+			<p>
+				Bitcoin is one of the most important inventions for mankind. We must steward it responsibly and not allow a corporate takeover by toxic companies or developers that use censorship and divisive tactics in order to steal our mining profits for themselves. Eternal vigilance is the price of liberty.
+			</p>
+		</main>
+
+		<footer>
+			Published: 1 November 2017.<br>
+			Last updated: 1 November 2017.<br>
+			<br>
+			Improvements and additional references are welcome, they can be<br>
+			submitted using a Pull Request to the <a href="https://github.com/theflippening/open-letter-to-bitcoin-miners-from-another-miner/tree/gh-pages">gh-pages</a> branch.
+		</footer>
+	</body>
+</html>
